@@ -1,0 +1,18 @@
+schema {
+    query: Query
+}
+
+type Query {
+    member(name: String): Member
+    user_roles(uid: String): User_roles
+}
+
+type Member {
+    uid: String
+    uname: String
+}
+
+type User_roles {
+    uid: String
+    role_name: String
+}

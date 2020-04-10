@@ -1,0 +1,18 @@
+schema {
+    query: Query
+}
+
+type Query {
+    member(uid: String): Member
+    order(orderId: String): Order
+}
+
+type Member {
+    uid: String
+    uname: String
+}
+
+type Order {
+    orderId: String
+    description: String
+}
